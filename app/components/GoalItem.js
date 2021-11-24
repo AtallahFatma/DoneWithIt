@@ -1,12 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import colors from '../config/colors';
 
-function GoalItem(props) {
+function GoalItem({ onDelete, value, id }) {
     return (
-        <View style={styles.listItem}>
-            <Text>{props.value}</Text>
-        </View>
+        <TouchableOpacity onPress={onDelete.bind(this, id)}>
+            <View style={styles.listItem}>
+                <Text>{value}</Text>
+            </View>
+        </TouchableOpacity>
     );
 }
 
