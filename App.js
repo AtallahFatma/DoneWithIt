@@ -1,11 +1,10 @@
 // rsf to create stateless Functional component
 import React from 'react';
-import WelcomeScreen from './app/screens/WelcomeScreen';
-import ViewImageScreen from './app/screens/ViewImageScreen';
+import ViewInputScreen from './app/screens/ViewInputScreen';
 
 export default function App() {
 
   return (
-    <ViewImageScreen />
+    <ViewInputScreen />
   );
 }

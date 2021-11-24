@@ -16,7 +16,7 @@ function ViewImageScreen() {
 
     );
 }
-// rnss  to create styple const
+// rnss  to create style const
 const styles = StyleSheet.create({
     image: {
         height: '100%',
